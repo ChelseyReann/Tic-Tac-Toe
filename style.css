@@ -29,7 +29,7 @@ h1{
 }
 
 button {
-    margin-left: 45%;
+    margin-left: 48%;
 }
 
 .player1{
@@ -38,4 +38,8 @@ button {
 
 .player2{
     background-color: rgb(210, 88, 208);
+}
+
+p{
+    text-align: center;
 }

@@ -26,14 +26,45 @@ function switchPlayer (){
 }
 
 function checkForWinner (){
-    let player1Count = 0
-    let player2Count = 0
-    if("player1" === [[0],[0],[0]]){
-        console.log ("player 1 wins!")
-    } else if ("player1" === [[1],[1],[1]]) {
-        console.log ("player 1 wins!")
-    } else {
-        console.log("help")
+    //vertical wins for player 1
+    if(gameBoard[0][0].classList.contains("player1") && gameBoard[1][0].classList.contains("player1") && gameBoard[2][0].classList.contains("player1")){
+        alert("player 1 wins!")
+    } else if (gameBoard[0][1].classList.contains("player1") && gameBoard[1][1].classList.contains("player1") && gameBoard[2][1].classList.contains("player1")) {
+        alert("player 1 wins!")
+    } else if (gameBoard[0][2].classList.contains("player1") && gameBoard[1][2].classList.contains("player1") && gameBoard[2][2].classList.contains("player1")) {
+        alert("player 1 wins!")
+    //horizontal wins for player 1
+    } else if (gameBoard[0][0].classList.contains("player1") && gameBoard[0][1].classList.contains("player1") && gameBoard[0][2].classList.contains("player1")){
+        alert("player 1 wins!")
+    } else if (gameBoard[0][0].classList.contains("player1") && gameBoard[1][0].classList.contains("player1") && gameBoard[2][0].classList.contains("player1")){
+        alert("player 1 wins!")
+    } else if (gameBoard[1][0].classList.contains("player1") && gameBoard[1][1].classList.contains("player1") && gameBoard[1][2].classList.contains("player1")){
+        alert("player 1 wins!")
+    } else if (gameBoard[2][0].classList.contains("player1") && gameBoard[2][1].classList.contains("player1") && gameBoard[2][2].classList.contains("player1")){
+        alert("player 1 wins!")
+    //diagonal wins for player 1
+    } else if (gameBoard[0][0].classList.contains("player1") && gameBoard[1][1].classList.contains("player1") && gameBoard[2][2].classList.contains("player1")){
+        alert("player 1 wins!")
+    } else if (gameBoard[0][2].classList.contains("player1") && gameBoard[1][1].classList.contains("player1") && gameBoard[2][0].classList.contains("player1")){
+        alert("player 1 wins!")
+    //vertical wins for player 2
+    } else if (gameBoard[0][0].classList.contains("player2") && gameBoard[1][0].classList.contains("player2") && gameBoard[2][0].classList.contains("player2")){
+        alert("player 2 wins!")
+    } else if (gameBoard[0][1].classList.contains("player2") && gameBoard[1][1].classList.contains("player2") && gameBoard[2][1].classList.contains("player2")){
+        alert("player 2 wins!")
+    } else if (gameBoard[0][2].classList.contains("player2") && gameBoard[1][2].classList.contains("player2") && gameBoard[2][2].classList.contains("player2")){
+        alert("player 2 wins!")
+    //horizontal wins for player 2
+    } else if (gameBoard[0][0].classList.contains("player2") && gameBoard[0][1].classList.contains("player2") && gameBoard[0][2].classList.contains("player2")){
+        alert("player 2 wins!")
+    } else if (gameBoard[0][0].classList.contains("player2") && gameBoard[1][0].classList.contains("player2") && gameBoard[2][0].classList.contains("player2")){
+        alert("player 2 wins!")
+    } else if (gameBoard[2][0].classList.contains("player2") && gameBoard[2][1].classList.contains("player2") && gameBoard[2][2].classList.contains("player2")){
+        alert("player 2 wins!")
+    //diagonal wins for player 2
+    } else if (gameBoard[0][0].classList.contains("player2") && gameBoard[1][1].classList.contains("player2") && gameBoard[2][2].classList.contains("player2")){
+        alert("player 2 wins!")
+    } else if (gameBoard[0][2].classList.contains("player1") && gameBoard[1][1].classList.contains("player1") && gameBoard[2][0].classList.contains("player1")){
+        alert("player 2 wins!")
     }
 }
-
