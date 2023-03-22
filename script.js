@@ -13,10 +13,12 @@ switchPlayer()
 
 boxes.forEach((box) => {
     box.addEventListener("click", () => {
-        box.classList.add(currentPlayer)
-        switchPlayer()
-        checkForWinner()
-        clickCount++
+        if (!box.classList.contains("player1") && !box.classList.contains("player2")) {
+            box.classList.add(currentPlayer)
+            switchPlayer()
+            checkForWinner()
+            clickCount++
+        }
         if (clickCount === boxes.length && winner === null){
             alert("It's a draw! Game over!")
         }
