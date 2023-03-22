@@ -21,7 +21,7 @@ boxes.forEach((box) => {
             clickCount++
         }
         if (clickCount === boxes.length && winner === null){
-            alert("It's a draw! Game over!")
+            winnerDeclaration.innerText = "It's a draw! Game over!"
         }
     })
 })
