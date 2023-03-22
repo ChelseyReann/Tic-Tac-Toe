@@ -5,7 +5,7 @@ let botR = document.querySelectorAll(".botR")
 let gameBoard = [topR, midR, botR]
 let currentPlayer
 let clickCount = 0
-let winner = "null"
+let winner = null
 
 switchPlayer()
 
@@ -17,7 +17,7 @@ boxes.forEach((box) => {
         switchPlayer()
         checkForWinner()
         clickCount++
-        if (clickCount === boxes.length && winner === "null"){
+        if (clickCount === boxes.length && winner === null){
             alert("It's a draw! Game over!")
         }
     })
