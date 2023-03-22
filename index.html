@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic-Tac-Toe</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+<script src="script.js" defer></script>
 </head>
 <body>
     <h1>Tic Tac Toe</h1>
+    <p id="playerClass">Current player</p>
     <div class="grid">
         <div class="boxes" id="box1"></div>
         <div class="boxes" id="box2"></div>
@@ -20,6 +24,11 @@
         <div class="boxes" id="box7"></div>
         <div class="boxes" id="box8"></div>
         <div class="boxes" id="box9"></div>
+    </div>
+
+    <div class="winning-message" id="winningMessage">
+        <div id="winningMessageText"></div>
+        <button id="restartButton">Restart</button>
     </div>
 </body>
 </html>

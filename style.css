@@ -1,11 +1,13 @@
 body {
     background-color: black;
+    font-family: 'Luckiest Guy', cursive;
 }
 
 h1{
     color: white;
     text-align: center;
     font-size: 50px;
+    margin-bottom: 10px;
 }
 
 .grid {
@@ -24,4 +26,16 @@ h1{
     width: 150px;
     height: 150px;
     border: 3px solid white;
+}
+
+button {
+    margin-left: 45%;
+}
+
+.player1{
+    background-color: rgb(241, 117, 179);
+}
+
+.player2{
+    background-color: rgb(210, 88, 208);
 }
