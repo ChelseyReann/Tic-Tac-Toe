@@ -6,6 +6,7 @@ let gameBoard = [topR, midR, botR]
 let currentPlayer
 let clickCount = 0
 let winner = null
+let winnerDeclaration = document.querySelector(".winner")
 
 switchPlayer()
 
@@ -38,59 +39,76 @@ function checkForWinner (){
     //vertical wins for player 1
     if(gameBoard[0][0].classList.contains("player1") && gameBoard[1][0].classList.contains("player1") && gameBoard[2][0].classList.contains("player1")){
         winner = "player 1"
-        alert("player 1 wins!")
+        winnerDeclaration.innerText = "Player 1 Wins!"
+        // alert("player 1 wins!")
     } else if (gameBoard[0][1].classList.contains("player1") && gameBoard[1][1].classList.contains("player1") && gameBoard[2][1].classList.contains("player1")) {
         winner = "player 1"
-        alert("player 1 wins!")
+        winnerDeclaration.innerText = "Player 1 Wins!"
+        // alert("player 1 wins!")
     } else if (gameBoard[0][2].classList.contains("player1") && gameBoard[1][2].classList.contains("player1") && gameBoard[2][2].classList.contains("player1")) {
         winner = "player 1"
-        alert("player 1 wins!")
+        winnerDeclaration.innerText = "Player 1 Wins!"
+        // alert("player 1 wins!")
     //horizontal wins for player 1
     } else if (gameBoard[0][0].classList.contains("player1") && gameBoard[0][1].classList.contains("player1") && gameBoard[0][2].classList.contains("player1")){
         winner = "player 1"
-        alert("player 1 wins!")
+        winnerDeclaration.innerText = "Player 1 Wins!"
+        // alert("player 1 wins!")
     } else if (gameBoard[0][0].classList.contains("player1") && gameBoard[1][0].classList.contains("player1") && gameBoard[2][0].classList.contains("player1")){
         winner = "player 1"
-        alert("player 1 wins!")
+        winnerDeclaration.innerText = "Player 1 Wins!"
+        // alert("player 1 wins!")
     } else if (gameBoard[1][0].classList.contains("player1") && gameBoard[1][1].classList.contains("player1") && gameBoard[1][2].classList.contains("player1")){
         winner = "player 1"
-        alert("player 1 wins!")
+        winnerDeclaration.innerText = "Player 1 Wins!"
+        // alert("player 1 wins!")
     } else if (gameBoard[2][0].classList.contains("player1") && gameBoard[2][1].classList.contains("player1") && gameBoard[2][2].classList.contains("player1")){
         winner = "player 1"
-        alert("player 1 wins!")
+        winnerDeclaration.innerText = "Player 1 Wins!"
+        // alert("player 1 wins!")
     //diagonal wins for player 1
     } else if (gameBoard[0][0].classList.contains("player1") && gameBoard[1][1].classList.contains("player1") && gameBoard[2][2].classList.contains("player1")){
         winner = "player 1"
-        alert("player 1 wins!")
+        winnerDeclaration.innerText = "Player 1 Wins!"
+        // alert("player 1 wins!")
     } else if (gameBoard[0][2].classList.contains("player1") && gameBoard[1][1].classList.contains("player1") && gameBoard[2][0].classList.contains("player1")){
         winner = "player 1"
-        alert("player 1 wins!")
+        winnerDeclaration.innerText = "Player 1 Wins!"
+        // alert("player 1 wins!")
     //vertical wins for player 2
     } else if (gameBoard[0][0].classList.contains("player2") && gameBoard[1][0].classList.contains("player2") && gameBoard[2][0].classList.contains("player2")){
         winner = "player 2"
-        alert("player 2 wins!")
+        winnerDeclaration.innerText = "Player 2 Wins!"
+        // alert("player 2 wins!")
     } else if (gameBoard[0][1].classList.contains("player2") && gameBoard[1][1].classList.contains("player2") && gameBoard[2][1].classList.contains("player2")){
         winner = "player 2"
-        alert("player 2 wins!")
+        winnerDeclaration.innerText = "Player 2 Wins!"
+        // alert("player 2 wins!")
     } else if (gameBoard[0][2].classList.contains("player2") && gameBoard[1][2].classList.contains("player2") && gameBoard[2][2].classList.contains("player2")){
         winner = "player 2"
-        alert("player 2 wins!")
+        winnerDeclaration.innerText = "Player 2 Wins!"
+        // alert("player 2 wins!")
     //horizontal wins for player 2
     } else if (gameBoard[0][0].classList.contains("player2") && gameBoard[0][1].classList.contains("player2") && gameBoard[0][2].classList.contains("player2")){
         winner = "player 2"
-        alert("player 2 wins!")
+        winnerDeclaration.innerText = "Player 2 Wins!"
+        // alert("player 2 wins!")
     } else if (gameBoard[0][0].classList.contains("player2") && gameBoard[1][0].classList.contains("player2") && gameBoard[2][0].classList.contains("player2")){
         winner = "player 2"
-        alert("player 2 wins!")
+        winnerDeclaration.innerText = "Player 2 Wins!"
+        // alert("player 2 wins!")
     } else if (gameBoard[2][0].classList.contains("player2") && gameBoard[2][1].classList.contains("player2") && gameBoard[2][2].classList.contains("player2")){
         winner = "player 2"
-        alert("player 2 wins!")
+        winnerDeclaration.innerText = "Player 2 Wins!"
+        // alert("player 2 wins!")
     //diagonal wins for player 2
     } else if (gameBoard[0][0].classList.contains("player2") && gameBoard[1][1].classList.contains("player2") && gameBoard[2][2].classList.contains("player2")){
         winner = "player 2"
-        alert("player 2 wins!")
+        winnerDeclaration.innerText = "Player 2 Wins!"
+        // alert("player 2 wins!")
     } else if (gameBoard[0][2].classList.contains("player1") && gameBoard[1][1].classList.contains("player1") && gameBoard[2][0].classList.contains("player1")){
         winner = "player 2"
-        alert("player 2 wins!")
+        winnerDeclaration.innerText = "Player 2 Wins!"
+        // alert("player 2 wins!")
     }
 }
