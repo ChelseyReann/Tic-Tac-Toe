@@ -7,6 +7,7 @@ let currentPlayer
 let clickCount = 0
 let winner = null
 let winnerDeclaration = document.querySelector(".winner")
+let button = document.querySelector("button")
 
 switchPlayer()
 
@@ -92,3 +93,7 @@ function checkForWinner (){
         winnerDeclaration.innerText = "Player 2 Wins!"
     }
 }
+
+button.addEventListener("click", () => {
+    location.reload()
+})
