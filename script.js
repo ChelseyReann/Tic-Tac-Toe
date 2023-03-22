@@ -1,9 +1,11 @@
 let boxes = document.querySelectorAll(".boxes")
-
+let topR = document.querySelectorAll(".topR")
+let midR = document.querySelectorAll(".midR")
+let botR = document.querySelectorAll(".botR")
+let gameBoard = [topR, midR, botR]
 let currentPlayer
 switchPlayer()
 
-let gameB = [[0,1,2], [0,1,2], [0,1,2]]
 
 
 boxes.forEach((box) => {
@@ -24,6 +26,8 @@ function switchPlayer (){
 }
 
 function checkForWinner (){
+    let player1Count = 0
+    let player2Count = 0
     if("player1" === [[0],[0],[0]]){
         console.log ("player 1 wins!")
     } else if ("player1" === [[1],[1],[1]]) {
