@@ -51,11 +51,14 @@ p{
 button{
     font-family: 'Luckiest Guy', cursive;
     padding-top: 0.5rem;
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
     margin-top: 0;
     font-size: 20px;
     margin-left: 47.5%;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
 }
 
 @media screen and (max-width: 576px) {
