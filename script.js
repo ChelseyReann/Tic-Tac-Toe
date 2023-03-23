@@ -88,7 +88,7 @@ function checkForWinner (){
     } else if (gameBoard[0][0].classList.contains("player2") && gameBoard[1][1].classList.contains("player2") && gameBoard[2][2].classList.contains("player2")){
         winner = "player 2"
         winnerDeclaration.innerText = "Player 2 Wins!"
-    } else if (gameBoard[0][2].classList.contains("player1") && gameBoard[1][1].classList.contains("player1") && gameBoard[2][0].classList.contains("player1")){
+    } else if (gameBoard[0][2].classList.contains("player2") && gameBoard[1][1].classList.contains("player2") && gameBoard[2][0].classList.contains("player2")){
         winner = "player 2"
         winnerDeclaration.innerText = "Player 2 Wins!"
     }
