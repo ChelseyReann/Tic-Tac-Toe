@@ -11,6 +11,6 @@ Click the link below!
 [Tic Tac Toe](https://chelseyreann.github.io/Tic-Tac-Toe/)
 
 ## Connect with Me!
-[LinkedIn](https://www.linkedin.com/in/chelsey-alphonso-84067353/)
+[LinkedIn](https://www.linkedin.com/in/chelsey-alphonso)
 
 [Portfolio](https://chelseyreann.github.io/index.html)
